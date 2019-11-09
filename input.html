@@ -1,0 +1,59 @@
+<html>
+<head>
+
+<style>
+  body {
+    margin: 0;
+    background-color: transparent;
+  }
+
+  #viewport {
+    overflow: hidden;
+  }
+
+  #viewport div {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "viewport";
+  }
+
+  #viewport div > * {
+    grid-area: viewport;
+    width: 100%;
+    height: 100%;
+    border: none;
+    isolation: isolate;
+  }
+
+  .masked {
+    -webkit-mask-image: url(input.iconMaskIosSquircle.rendered.svg);
+  }
+</style>
+
+<script>
+  window.ready =
+    fn => { document.readyState !== 'loading' ? fn() : document.addEventListener('DOMContentLoaded', fn) }
+</script>
+
+</head>
+<body>
+
+<div id="viewport" class="masked">
+<div class="" style=""> <!-- start depth 0 -->
+
+<div class="" style="transform:scale(calc(3/2))"> <!-- start depth 1 -->
+
+<img src="input.iconBackground.rendered.svg" />
+
+<img src="input.iconFlatForeground.rendered.svg" />
+
+</div> <!-- end depth 1 -->
+
+
+</div> <!-- end depth 0 -->
+
+</div>
+
+</body>
+</html>
