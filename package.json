@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "dependencies": {
+    "file-url": "^3.0.0",
+    "puppeteer1": "npm:puppeteer@^1.0.0",
+    "puppeteer2": "npm:puppeteer@^2.0.0"
+  }
+}
